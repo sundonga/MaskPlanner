@@ -32,7 +32,7 @@
 
 Our release is **under construction**, you can track its progress below:
 
-- [ ] Extended PaintNet dataset for public download
+- [x] Extended PaintNet dataset for public download
 - [ ] Code implementation
   - [x] Dataset loader
   - [x] Training and inference
