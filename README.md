@@ -94,13 +94,13 @@ This code has been tested on:
 ## Getting started
 
 ### Training MaskPlanner
-1. Quick debugging test (Cuboids)
+1. Quick training for debugging (Windows category)
     ```bash
     # Implicit, using `maskplanner` as an alias for multiple config files
-    python train_maskplanner.py config=[maskplanner,cuboids_v2,longx_v2,debug] seed=42
+    python train_maskplanner.py config=[maskplanner,windows_v2,longx_v2,debug] seed=42
 
     # Explicit, using the full list of config file names and some parameters explicitly. Equivalent to the above command.
-    python train_maskplanner.py config=[asymm_chamfer_v9,delayMasksLoss,traj_sampling_v2,sched_v9,cuboids_v2,longx_v2] \
+    python train_maskplanner.py config=[asymm_chamfer_v9,delayMasksLoss,traj_sampling_v2,sched_v9,windows_v2,longx_v2] \
                                 wandb=disabled  \
                                 epochs=20 \
                                 eval_freq=10 \
@@ -110,9 +110,9 @@ This code has been tested on:
                                 seed=42
     ```
 
-2. Official (Cuboids)
+2. Complete training (Windows category)
     ```bash
-    python train_maskplanner.py config=[maskplanner,cuboids_v2,longx_v2] seed=42
+    python train_maskplanner.py config=[maskplanner,windows_v2,longx_v2] seed=42
     ```
 
 Config files defined in the `config=[...]` parameters can be found at `configs/maskplanner`. If a parameter appears in multiple config files, the order of the config files matter (later configs overwrite preceeding configs). A parameter may always be explicitly specified on the command line, talking ultimate priority (e.g. `seed=42`).
