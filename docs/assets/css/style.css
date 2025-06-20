@@ -107,9 +107,9 @@ header {
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
 	padding-top: 60px;
-/*	padding-bottom: 460px;*/
-
-	padding-bottom: 660px;
+	
+	padding-bottom: 460px;
+	/* padding-bottom: 660px; */
 
 }
 	#headerBackground {
